@@ -4,8 +4,11 @@ La solucion consiste en 2 microservicios y una base de datos Postgres, cada uno 
 ### Construir servicios
 ```
 cd customer-service
-mvn test
 mvn install
+```
+### Ejecutar pruebas unitarias y de integracion
+```
+mvn test
 ```
 ### Ejecutar servicio y base de datos
 ```
