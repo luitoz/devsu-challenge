@@ -2,7 +2,7 @@
 La solucion consiste en 2 microservicios y una base de datos Postgres, cada uno de ellos desplegado en un contenedor
 ##  customer-service
 ### base de datos
-[schema](customer-db.sql)
+[customer-db.sql](customer-db.sql)
 ### Construir servicios
 ```
 cd customer-service
@@ -18,8 +18,10 @@ cd customer-service
 docker compose -p devsu up
 ```
 ### Postman collection
-[collection](Customers.postman_collection.json)
+[Customers.postman_collection.json](Customers.postman_collection.json)
 ##  account-service
+### base de datos
+[account-db.sql](account-db.sql)
 ### Construir servicios
 ```
 cd account-service
@@ -31,8 +33,8 @@ mvn install
 cd account-service
 docker compose -p devsu up
 ```
-## Ejecutar pruebas con Postman
-[Contribution guidelines for this project](settings.xml)
+### Postman collection
+[Accounts.postman_collection.json](Accounts.postman_collection.json)
 
 
 
