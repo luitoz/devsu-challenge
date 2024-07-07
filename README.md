@@ -1,6 +1,8 @@
-# devsu-challenge
+# microservices demo project
 La solucion consiste en 2 microservicios y una base de datos Postgres, cada uno de ellos desplegado en un contenedor
 ##  customer-service
+### base de datos
+[schema](customer-db.sql)
 ### Construir servicios
 ```
 cd customer-service
@@ -15,6 +17,8 @@ mvn test
 cd customer-service
 docker compose -p devsu up
 ```
+### Postman collection
+[collection](Customers.postman_collection.json)
 ##  account-service
 ### Construir servicios
 ```
